@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Meow+Script&display=swap');
 
 
 *{
@@ -31,6 +31,7 @@ body{
   box-sizing: border-box;
   z-index: 99;
   overflow: hidden;
+  box-shadow: 5px -0px 5px #888888;
 }
 .teacher{
     background-image: url(Teacher2.gif);
@@ -63,7 +64,6 @@ z-index: 98;
 }
 .bio h2{
     font-size:1.8rem;
-    font-family: Poppins;
 }
 main{
     width: 80%;
@@ -71,6 +71,7 @@ main{
     position: relative;
     padding: 80px 10px;
     z-index: 1;
+    font-family: 'Meow Script', cursive;
 }
 .wavy{
     text-decoration: underline wavy #8f5575;
@@ -144,6 +145,7 @@ h1{
     border-radius:8px;
     width: 80%;
     margin: 20px;
+    font-family: "Raleway"
 }
 .btn button:hover{
     background-color: #a26a89;
