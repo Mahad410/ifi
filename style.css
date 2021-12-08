@@ -112,3 +112,14 @@ h1{
     font-size: 2rem;
     font-family: "Poppins";
 }
+.w_line{
+    text-decoration: underline wavy #fff;
+    -webkit-text-underline-position: under;
+    text-underline-position: under;
+}
+
+.strike{
+    text-decoration:double line-through #fff;
+    -webkit-text-underline-position: under;
+    text-underline-position: under;
+}

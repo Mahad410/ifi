@@ -1,4 +1,5 @@
 $(document).ready(function(){       
+    $('.intro').addClass('animate__animated animate__hinge animate__delay-3s animate__slower');
     var scroll_pos = 0;
     $(document).scroll(function() { 
         scroll_pos = $(this).scrollTop();
