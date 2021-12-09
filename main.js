@@ -11,4 +11,10 @@ $(document).ready(function(){
             $('nav a svg').css('color',"#fff");
         }
     });
+
+    $('a').click(function (e) {
+        $('html, body').animate({
+            scrollTop: $($(this).attr('href')).offset().top
+        }, 800);
+    });
 });
