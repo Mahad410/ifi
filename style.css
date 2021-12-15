@@ -221,8 +221,8 @@ transform: scale(1.1);
     .container{
         grid-template-columns: auto;
         grid-gap: 0;
-        padding-left:6vw;
-         padding-right:1vw;
+        padding-left:7vw;
+         padding-right:2vw;
         place-items: border;
         padding-top: 0;
     }
