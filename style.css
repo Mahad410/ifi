@@ -11,7 +11,6 @@ margin: 0;
 box-sizing: border-box;
 }
 body{
-
     user-select: none;
 }
 .navbar{
@@ -41,12 +40,16 @@ body{
 .intro{
     position: relative;
     top:50%;
-    transform: translateY(-50%);
+    left: 55%;
+    transform: translate(-50%,-50%);
     text-align: center;
     z-index: 98;
     line-height: 80px;
+    word-wrap: break-word;
 }
-
+.intro h1, .contact h1{
+font-size:4rem;
+}
 main{
     width: 100%;
     position: relative;
@@ -58,7 +61,6 @@ main>*{
     box-sizing: border-box;
 } 
 .container{
-    height: 100vh;
     background: #efc1db;
     padding-left:4vw;
     padding-right:1.2vw;
@@ -70,7 +72,7 @@ main>*{
     }
 
 .bio h2{
-    font-size:1.6rem;
+    font-size:2rem;
     font-family: 'Fuzzy Bubbles', cursive;
 
 }
@@ -111,9 +113,7 @@ display: grid;
  place-items: center;
 }
 
-h1{
-    font-size:4rem
-}
+
 .white{
     text-decoration: underline wavy #efc1db;
     -webkit-text-underline-position: under;
@@ -170,11 +170,14 @@ h1{
     background-color:#8f5575;
     width: 100%;
     height: 100vh;
+    overflow: hidden;
 }
 .in{
     position: relative;
     top: 50%;
-    transform: translateY(-50%);
+    left:55%;
+    transform: translate(-50%,-50%);
+    text-align: center;
 }
 .footer a{
 display: inline-block;
@@ -197,22 +200,15 @@ transform: scale(1.1);
 
 /* responsive */
 
-@media screen and (max-width: 900px){
+@media screen and (max-width: 1100px){
     .intro{
-        position: relative;
-        top:50%;
-        left: 55%;
-        transform: translate(-50%,-50%);
-        text-align: center;
-        z-index: 98;
         line-height: 90px;
     }
+
     main>*{
         width: 93%;
-        margin-left:auto ;
-        box-sizing: border-box;
+        margin-left:auto;
     }   
-    
     .teacher{
         width: 400px;
         height: 400px;
@@ -221,12 +217,10 @@ transform: scale(1.1);
     .container{
         grid-template-columns: auto;
         grid-gap: 0;
-        padding-left:7vw;
-         padding-right:2vw;
-        place-items: border;
+        padding-left:5vw;
+        padding-right:2vw;
         padding-top: 0;
     }
-    
     .pic{
         order: 1;
     }
@@ -234,17 +228,152 @@ transform: scale(1.1);
         order: 2;
         margin-bottom:10px
     }
-    .bio h2{
-        font-size:1.2rem;
+    .bio h2, .btn button{
+        font-size:1.5rem;
     }
 
-    .in{
-        position: relative;
-        top: 50%;
-        left:55%;
-        transform: translate(-50%,-50%);
-    }
     .footer a{
         margin-bottom:15vh;
         }
+}
+
+@media screen and (max-width: 786px){
+    .navbar{
+        padding:15px;
+    }    
+    
+    .intro{
+        line-height:60px;
+    }
+
+    .intro h1{
+        font-size:3rem;
+    }
+
+    .intro p{
+        font-size: 1.5rem;
+    }
+    
+    .container{
+        padding-left:3vw;
+        padding-right:2vw;
+    }
+
+    .bio h2, .btn button{
+        font-size:1.5rem;
+    }
+
+    .contact h1{
+        font-size:3rem;
+    }
+}
+
+
+@media screen and (max-width: 600px){
+    .intro{
+        line-height:50px;
+    }
+
+    .intro h1{
+        font-size:2rem;
+    }
+
+    .intro p{
+        font-size: 1rem;
+    }
+
+    .container{
+        padding-left:5vw;
+        padding-right:2vw;
+    }
+
+    .bio h2, .btn button{
+        font-size:1rem;
+    }
+    .contact h1{
+        font-size:2rem;
+    }
+    .footer a{
+        margin-bottom:10vh;
+        }
+}
+
+@media screen and (max-width: 475px){
+.teacher{
+    width:350px;
+    height:350px
+}
+.container{
+    padding-left:6vw;
+    padding-right:2vw;
+}
+}
+
+
+@media screen and (max-width: 430px){
+    .intro h1{
+        font-size:2.4rem;
+    }
+
+    .intro p{
+        font-size: 1rem;
+    }
+
+
+    .container{
+        padding-left:7vw;
+        padding-right:1.5vw;
+    }
+    .teacher{
+        width:330px;
+        height:330px
+    }
+    .bio h2,.btn button{
+        font-size:1.3rem;
+    }
+    .contact h1{
+        font-size:2.4rem;
+    }
+    .footer a{
+        margin-bottom:10vh;
+        }
+}
+
+@media screen and (max-width: 380px){
+    .intro h1{
+        font-size:2.4rem;
+    }
+
+    .intro p{
+        font-size: 1rem;
+    }
+    .container{
+        padding-left:7vw;
+        padding-right:1.5vw;
+    }
+    .teacher{
+        width:300px;
+        height: 300px;
+    }
+    .bio h2,.btn button{
+        font-size:1rem;
+    }
+    .contact h1{
+        font-size:2.4rem;
+    }
+    .footer a{
+        margin-bottom:10vh;
+        }
+}
+
+@media screen and (max-width: 360px){
+    .container{
+        padding-left:10vw;
+        padding-right:1.5vw;
+    }
+    .teacher{
+        width:260px;
+        height: 260px;
+    }
+
 }
