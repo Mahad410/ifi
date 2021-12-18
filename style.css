@@ -85,10 +85,11 @@ main>*{
 }
 
 .wavy{
-    text-decoration:wavy #8f5575;
+    text-decoration: underline wavy #8f5575;
+    -webkit-text-decoration: underline wavy #8f5575;
     -webkit-text-underline-position: under;
     text-underline-position: under;
-    -moz-text-decoration-line: wavy #8f5575;
+    
 }
 
 nav a:hover{
@@ -115,7 +116,8 @@ display: grid;
 
 
 .white{
-    text-decoration: wavy #efc1db;
+    text-decoration: underline wavy #efc1db;
+    -webkit-text-decoration: underline wavy #efc1db;
     -webkit-text-underline-position: under;
     text-underline-position: under;
     color: #fff;
@@ -125,13 +127,15 @@ display: grid;
     font-family: "Poppins";
 }
 .w_line{
-    text-decoration: wavy #fff;
+    text-decoration: underline wavy #fff;
+    -webkit-text-decoration: underline wavy #fff;
     -webkit-text-underline-position: under;
     text-underline-position: under;
 }
 
 .strike{
     text-decoration: line-through #fff;
+    -webkit-text-decoration: line-through #fff;
     -webkit-text-underline-position: under;
     text-underline-position: under;
 }
@@ -306,6 +310,10 @@ transform: scale(1.1);
 .container{
     padding-left:6vw;
     padding-right:2vw;
+}
+svg{
+width:6vw;
+height:6vh;
 }
 }
 
