@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Meow+Script&display=swap');
 
 
 
@@ -86,9 +85,10 @@ main>*{
 }
 
 .wavy{
-    text-decoration: underline wavy #8f5575;
+    text-decoration:wavy #8f5575;
     -webkit-text-underline-position: under;
     text-underline-position: under;
+    -moz-text-decoration-line: wavy #8f5575;
 }
 
 nav a:hover{
@@ -115,7 +115,7 @@ display: grid;
 
 
 .white{
-    text-decoration: underline wavy #efc1db;
+    text-decoration: wavy #efc1db;
     -webkit-text-underline-position: under;
     text-underline-position: under;
     color: #fff;
@@ -125,7 +125,7 @@ display: grid;
     font-family: "Poppins";
 }
 .w_line{
-    text-decoration: underline wavy #fff;
+    text-decoration: wavy #fff;
     -webkit-text-underline-position: under;
     text-underline-position: under;
 }
