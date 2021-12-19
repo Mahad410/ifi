@@ -29,14 +29,14 @@ body{
 
 
 .header{
-        height: 100vh;
-        width: 100%;
-        background-color: #8f5575;
-        overflow:hidden;
-        font-family: 'Raleway', sans-serif;
+    height: 100vh;
+    width: 100%;
+    background-color: #8f5575;
+    overflow:hidden;
+    font-family: 'Raleway', sans-serif;
 }
 
-.intro{
+.intro {
     position: relative;
     top:50%;
     left: 55%;
@@ -47,7 +47,7 @@ body{
     word-wrap: break-word;
 }
 .intro h1, .contact h1{
-font-size:4rem;
+    font-size:4rem;
 }
 main{
     width: 100%;
@@ -329,21 +329,30 @@ height:6vh;
 
 
     .container{
-        padding-left:7vw;
-        padding-right:1.5vw;
+        padding-left:9vw;
+        padding-right:1.8vw;
     }
     .teacher{
         width:330px;
         height:330px
     }
     .bio h2,.btn button{
-        font-size:1.3rem;
+        font-size:1.2rem;
+    }
+    
+    .btn button {
+        width: 98%;
     }
     .contact h1{
         font-size:2.4rem;
     }
     .footer a{
         margin-bottom:10vh;
+        }
+        .contact svg{
+            width:10vw;
+            height:auto;
+            margin: 5px;
         }
 }
 
@@ -356,8 +365,8 @@ height:6vh;
         font-size: 1rem;
     }
     .container{
-        padding-left:7vw;
-        padding-right:1.5vw;
+        padding-left:10vw;
+        padding-right:1.8vw;
     }
     .teacher{
         width:300px;
@@ -367,7 +376,7 @@ height:6vh;
         font-size:1rem;
     }
     .contact h1{
-        font-size:2.4rem;
+        font-size:2.2rem;
     }
     .footer a{
         margin-bottom:10vh;
@@ -375,13 +384,23 @@ height:6vh;
 }
 
 @media screen and (max-width: 360px){
+    
+    .intro h1{
+        font-size:2rem
+    }
     .container{
-        padding-left:10vw;
-        padding-right:1.5vw;
+        padding-left:12vw;
+        padding-right:2vw;
     }
     .teacher{
         width:260px;
         height: 260px;
+    }
+    .btn button {
+        width: 96%;
+    }
+    .contact h1{
+        font-size: 1.9rem
     }
 
 }
