@@ -25,4 +25,3 @@ $(document).ready(function(){
 
 //js
 var scroll = window.scrollY;
-console.log(scroll);
